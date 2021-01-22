@@ -1,7 +1,7 @@
 ## Utilities
 ```shell
 # install softwares
-sudo apt install git zsh net-tools vim make g++ cmake ninja-build tmux shadowsocks-libev privoxy gnome-sushi python3-pip
+sudo apt install git zsh net-tools vim make g++ build-essential cmake ninja-build tmux shadowsocks-libev privoxy gnome-sushi python3-pip
 # install and config oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 vim ~/.zshrc
