@@ -2,6 +2,12 @@
 ```shell
 # install softwares
 sudo apt install git zsh net-tools vim make g++ build-essential cmake ninja-build tmux shadowsocks-libev privoxy gnome-sushi python3-pip curl
+# update hosts
+sudo echo "140.82.112.3    github.com
+199.232.96.133  raw.githubusercontent.com
+185.199.108.153 assets-cdn.github.com
+199.232.69.194  github.global.ssl.fastly.net
+" >> /etc/hosts
 # install and config oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 vim ~/.zshrc
