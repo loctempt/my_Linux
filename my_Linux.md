@@ -26,5 +26,12 @@ echo "set -g mouse on" > ~/.tmux.conf
 # 如果Tmux在运行，则输入`ctrl+b, :`，然后`source ~/.tmux.conf`
 ```
 
+## Git settings
+### Better Git log
+```shell
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+```
+### Git using proxy
+[参考这篇文章 - proxy-setting](https://loctempt.github.io/blog_of_xiyuejiang/proxy-setting)
 
 
