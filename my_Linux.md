@@ -15,6 +15,9 @@ vim ~/.zshrc
 # change theme to `candy` and set alias `alias l='ls -aF'`
 
 ```
+## zsh settings
+[zsh 语法高亮以及自动提示](https://blog.csdn.net/qq_42094345/article/details/107958138)
+
 ## privoxy settings
 edit `/etc/privixy/config`, set `forward-socks5  /       127.0.0.1:1080  .
 ` and `listen-address  0.0.0.0:1081`
