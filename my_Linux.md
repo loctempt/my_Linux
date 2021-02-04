@@ -17,6 +17,7 @@ vim ~/.zshrc
 ```
 ## zsh settings
 [zsh 语法高亮以及自动提示](https://blog.csdn.net/qq_42094345/article/details/107958138)
+令tmux也可以正确显示各种颜色，尤其是zsh-autosuggestions `echo "export TERM=xterm-256color" >> ~/.zshrc`
 
 ## privoxy settings
 edit `/etc/privixy/config`, set `forward-socks5  /       127.0.0.1:1080  .
