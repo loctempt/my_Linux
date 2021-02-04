@@ -1,7 +1,7 @@
 ## Utilities installation
 ```shell
 # install softwares
-sudo apt install git zsh net-tools vim make g++ build-essential cmake ninja-build tmux shadowsocks-libev privoxy gnome-sushi python3-pip curl
+sudo apt install git zsh net-tools vim make g++ build-essential cmake ninja-build tmux shadowsocks-libev privoxy gnome-sushi python3-pip curl tree
 # update hosts
 sudo sh -c 'echo "140.82.112.3    github.com
 199.232.96.133  raw.githubusercontent.com
