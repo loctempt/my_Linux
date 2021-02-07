@@ -13,7 +13,7 @@ sudo sh -c 'echo "140.82.112.3    github.com
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 #vim ~/.zshrc
 echo "alias l='ls -aF'" >> ~/.zshrc
-echo "alias ll='ls -laF'" >> ~/.zshrc
+echo "alias ll='ls -lahF'" >> ~/.zshrc
 # change theme to `candy` and set alias `alias l='ls -aF'`
 
 ```
