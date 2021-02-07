@@ -11,7 +11,9 @@ sudo sh -c 'echo "140.82.112.3    github.com
 " >> /etc/hosts'
 # install and config oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-vim ~/.zshrc
+#vim ~/.zshrc
+echo "alias l='ls -aF'" >> ~/.zshrc
+echo "alias ll='ls -laF'" >> ~/.zshrc
 # change theme to `candy` and set alias `alias l='ls -aF'`
 
 ```
@@ -19,6 +21,10 @@ vim ~/.zshrc
 [zsh 语法高亮以及自动提示](https://blog.csdn.net/qq_42094345/article/details/107958138)
 
 [zsh autosuggestions在tmux环境下高亮问题处理](https://www.mojidong.com/post/2017-05-14-zsh-autosuggestions/)令tmux也可以正确显示各种颜色，尤其是zsh-autosuggestions `echo "export TERM=xterm-256color" >> ~/.zshrc`
+
+[powerlevel10k](https://github.com/romkatv/powerlevel10k#oh-my-zsh)
+
+[git插件造成卡顿](https://www.jianshu.com/p/bc4b8131db05) （据说上述powerlevel10k也可以起到加速作用，待测）
 
 ## privoxy settings
 edit `/etc/privixy/config`, set `forward-socks5  /       127.0.0.1:1080  .
