@@ -1,5 +1,8 @@
 ## Utilities installation
 ```shell
+# change apt's mirror
+sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
+sudo sed -i "s/archive.ubuntu.com/mirrors.aliyun.com/g" /etc/apt/sources.list
 # install softwares
 sudo apt install git zsh net-tools vim make g++ build-essential cmake ninja-build tmux shadowsocks-libev privoxy gnome-sushi python3-pip curl tree
 # update hosts
