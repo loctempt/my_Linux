@@ -34,6 +34,9 @@ edit `/etc/privixy/config`, set `forward-socks5  /       127.0.0.1:1080  .
 ` and `listen-address  0.0.0.0:1081`
 
 ## Tmux settings
+### vi风格快捷键
+[Vi mode in tmux](https://blog.sanctum.geek.nz/vi-mode-in-tmux/)
+
 ### 启动鼠标操作
 ```shell
 echo "set -g mouse on" > ~/.tmux.conf
