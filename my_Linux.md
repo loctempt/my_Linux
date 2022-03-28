@@ -36,6 +36,13 @@ edit `/etc/privixy/config`, set `forward-socks5  /       127.0.0.1:1080  .
 ## Tmux settings
 ### vi风格快捷键
 [Vi mode in tmux](https://blog.sanctum.geek.nz/vi-mode-in-tmux/)
+```shell
+# ~/.tmux.conf
+set-window-option -g mode-keys vi
+list-keys -T copy-mode-vi
+bind-key -T copy-mode-vi 'v' send -X begin-selection
+bind-key -T copy-mode-vi 'y' send -X copy-selection-and-cancel
+```
 
 ### 启动鼠标操作
 ```shell
