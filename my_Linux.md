@@ -43,6 +43,8 @@ list-keys -T copy-mode-vi
 bind-key -T copy-mode-vi 'v' send -X begin-selection
 bind-key -T copy-mode-vi 'y' send -X copy-selection-and-cancel
 ```
+### 修改tmux中的shell simulator，以支持多彩显示
+[tmux的终端模拟器设置](https://github.com/loctempt/my_Linux/blob/main/%E4%BD%93%E9%AA%8Ccocnvim.md#tmux%E7%9A%84%E7%BB%88%E7%AB%AF%E6%A8%A1%E6%8B%9F%E5%99%A8%E8%AE%BE%E7%BD%AE)
 
 ### 启动鼠标操作
 ```shell
@@ -58,4 +60,5 @@ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Crese
 ### Git using proxy
 [参考这篇文章 - proxy-setting](https://loctempt.github.io/blog_of_xiyuejiang/proxy-setting)
 
-
+## vim 添加cocnvim插件
+见[体验cocnvim](https://github.com/loctempt/my_Linux/blob/main/%E4%BD%93%E9%AA%8Ccocnvim.md)
