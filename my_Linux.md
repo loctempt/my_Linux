@@ -60,5 +60,32 @@ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Crese
 ### Git using proxy
 [参考这篇文章 - proxy-setting](https://loctempt.github.io/blog_of_xiyuejiang/proxy-setting)
 
+文章内链接已失效，参考下面的ssh代理配置：
+```shell
+Host 45.77.31.36
+   HostName 45.77.31.36
+   User root
+   # Port 22
+   Port 443
+   # ProxyCommand nc -v -X 5 -x 192.168.0.116:7890 %h %p
+   # ProxyCommand nc -v -x 192.168.0.109:7890 %h %p
+   # ProxyCommand nc -v -x 192.168.0.111:1082 %h %p
+   # ProxyCommand nc -v -x 192.168.0.108:7890 %h %p
+   ProxyCommand nc -v -x 127.0.0.1:7890 %h %p
+
+Host 108.61.246.183
+   HostName 108.61.246.183
+   User root
+   Port 4000
+   # Port 22
+   ProxyCommand nc -v -x 127.0.0.1:7890 %h %p
+
+Host github.com
+   HostName github.com
+   User git
+   ProxyCommand nc -v -x 127.0.0.1:7890 %h %p
+   # ProxyCommand nc -v -x 192.168.0.111:1082 %h %p
+```
+
 ## vim 添加cocnvim插件
 见[体验cocnvim](https://github.com/loctempt/my_Linux/blob/main/%E4%BD%93%E9%AA%8Ccocnvim.md)
